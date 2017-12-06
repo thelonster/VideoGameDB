@@ -1,0 +1,102 @@
+INSERT INTO Games VALUES ('03aa0c6','Mario Odyssey',59.99,'E 10+');
+INSERT INTO Games VALUES ('9035f2c','Legend of Zelda: Breath of the Wild',59.99,'E 10+');
+INSERT INTO Games VALUES ('d5dyf1z','Metroid: Samus Returns',39.99,'E 10+');
+INSERT INTO Games VALUES ('gbyrfju','Destiny 2',59.99,'T');
+INSERT INTO Games VALUES ('fj23tq1','World of Warcraft',59.99,'T');
+INSERT INTO Games VALUES ('cme6oez','Hearthstone',0.00,'T');
+INSERT INTO Games VALUES ('722e285','Overwatch',59.99,'T');
+INSERT INTO Games VALUES ('3tyaeaj','Diablo 3',59.99,'M');
+INSERT INTO Games VALUES ('zh12hkp','Starcraft 2',59.99,'T');
+INSERT INTO Games VALUES ('ung1wsy','Star Wars Battlefront 2',59.99,'T');
+
+INSERT INTO Stores VALUES ('1122333','714-111-1111','Anaheim','CA','92805');
+INSERT INTO Stores VALUES ('4455666','714-222-2222','Brea','CA','92821');
+INSERT INTO Stores VALUES ('7788999','714-333-3333','Fullerton','CA','92833');
+
+INSERT INTO Developers VALUES ('Nintendo','128','800','81',1889-09-23,'800-255-3700');
+INSERT INTO Developers VALUES ('Activision','38','310','1',1979-10-01,'310-255-2000');
+INSERT INTO Developers VALUES ('Blizzard Entertainment','26','949','1',1991-02-08,'949-955-1380');
+INSERT INTO Developers VALUES ('Dice','25','8','46',1992-05-10,'8-658-7800');
+
+INSERT INTO Publishers VALUES ('EA',1982-05-28,'35','Dice');
+INSERT INTO Publishers VALUES ('Nintendo',1889-09-23,'128','Nintendo');
+INSERT INTO Publishers VALUES ('Activision-Blizzard',2008-07-09,'9','Activision');
+
+INSERT INTO GameGenre VALUES ('Action Role-playing Game','3tyaeaj');
+INSERT INTO GameGenre VALUES ('Massively Multiplayer Online Role-playing Game','fj23tq1');
+INSERT INTO GameGenre VALUES ('First Person Shooter','gbyrfju');
+INSERT INTO GameGenre VALUES ('First Person Shooter','722e285');
+INSERT INTO GameGenre VALUES ('First Person Shooter','ung1wsy');
+INSERT INTO GameGenre VALUES ('Collectible Card Game','cme6oez');
+INSERT INTO GameGenre VALUES ('Action Adventure Game','9035f2c');
+INSERT INTO GameGenre VALUES ('Action Adventure Game','d5dyf1z');
+INSERT INTO GameGenre VALUES ('Platform Game','03aa0c6');
+INSERT INTO GameGenre VALUES ('Real-Time Strategy Game','zh12hkp');
+
+INSERT INTO Platforms VALUES ('Nintendo Switch','03aa0c6');
+INSERT INTO Platforms VALUES ('Nintendo Switch','9035f2c');
+INSERT INTO Platforms VALUES ('Nintendo 3DS','d5dyf1z');
+INSERT INTO Platforms VALUES ('PC','gbyrfju');
+INSERT INTO Platforms VALUES ('Xbox One','gbyrfju');
+INSERT INTO Platforms VALUES ('PS4','gbyrfju');
+INSERT INTO Platforms VALUES ('PC','fj23tq1');
+INSERT INTO Platforms VALUES ('PC','cme6oez');
+INSERT INTO Platforms VALUES ('PC','722e285');
+INSERT INTO Platforms VALUES ('Xbox One','722e285');
+INSERT INTO Platforms VALUES ('PS4','722e285');
+INSERT INTO Platforms VALUES ('PC','3tyaeaj');
+INSERT INTO Platforms VALUES ('PC','zh12hkp');
+INSERT INTO Platforms VALUES ('PC','ung1wsy');
+INSERT INTO Platforms VALUES ('Xbox One','ung1wsy');
+INSERT INTO Platforms VALUES ('PS4','ung1wsy');
+
+INSERT INTO Developed VALUES ('03aa0c6','Nintendo');
+INSERT INTO Developed VALUES ('9035f2c','Nintendo');
+INSERT INTO Developed VALUES ('d5dyf1z','Nintendo');
+INSERT INTO Developed VALUES ('gbyrfju','Activision');
+INSERT INTO Developed VALUES ('fj23tq1','Blizzard Entertainment');
+INSERT INTO Developed VALUES ('cme6oez','Blizzard Entertainment');
+INSERT INTO Developed VALUES ('722e285','Blizzard Entertainment');
+INSERT INTO Developed VALUES ('3tyaeaj','Blizzard Entertainment');
+INSERT INTO Developed VALUES ('zh12hkp','Blizzard Entertainment');
+INSERT INTO Developed VALUES ('ung1wsy','Dice');
+
+INSERT INTO "HAS A" VALUES ('03aa0c6','1122333',20);
+INSERT INTO "HAS A" VALUES ('03aa0c6','4455666',30);
+INSERT INTO "HAS A" VALUES ('03aa0c6','7788999',15);
+INSERT INTO "HAS A" VALUES ('9035f2c','1122333',10);
+INSERT INTO "HAS A" VALUES ('9035f2c','4455666',3);
+INSERT INTO "HAS A" VALUES ('9035f2c','7788999',5);
+INSERT INTO "HAS A" VALUES ('d5dyf1z','1122333',15);
+INSERT INTO "HAS A" VALUES ('d5dyf1z','4455666',12);
+INSERT INTO "HAS A" VALUES ('d5dyf1z','7788999',0);
+INSERT INTO "HAS A" VALUES ('gbyrfju','1122333',25);
+INSERT INTO "HAS A" VALUES ('gbyrfju','4455666',10);
+INSERT INTO "HAS A" VALUES ('gbyrfju','7788999',7);
+INSERT INTO "HAS A" VALUES ('fj23tq1','1122333',40);
+INSERT INTO "HAS A" VALUES ('fj23tq1','4455666',8);
+INSERT INTO "HAS A" VALUES ('fj23tq1','7788999',16);
+INSERT INTO "HAS A" VALUES ('cme6oez','1122333',22);
+INSERT INTO "HAS A" VALUES ('cme6oez','4455666',13);
+INSERT INTO "HAS A" VALUES ('cme6oez','7788999',34);
+INSERT INTO "HAS A" VALUES ('722e285','1122333',30);
+INSERT INTO "HAS A" VALUES ('722e285','4455666',36);
+INSERT INTO "HAS A" VALUES ('722e285','7788999',11);
+INSERT INTO "HAS A" VALUES ('3tyaeaj','1122333',14);
+INSERT INTO "HAS A" VALUES ('3tyaeaj','4455666',3);
+INSERT INTO "HAS A" VALUES ('3tyaeaj','7788999',0);
+INSERT INTO "HAS A" VALUES ('zh12hkp','1122333',8);
+INSERT INTO "HAS A" VALUES ('zh12hkp','4455666',4);
+INSERT INTO "HAS A" VALUES ('zh12hkp','7788999',5);
+INSERT INTO "HAS A" VALUES ('ung1wsy','1122333',22);
+INSERT INTO "HAS A" VALUES ('ung1wsy','4455666',35);
+INSERT INTO "HAS A" VALUES ('ung1wsy','7788999',19);
+
+INSERT INTO PubLocations VALUES ('11 Hokotate-Cho', 'Kamitoba', 'Japan', '18035', 'Nintendo');
+INSERT INTO PubLocations VALUES ('3700 Ocean Park Blvd', 'Santa Monica', 'United States of America', '90405', 'Activision-Blizzard');
+INSERT INTO PubLocations VALUES ('5510 Lincoln Blvd', 'Playa Vista', 'United States of America', '90094', 'EA');
+
+INSERT INTO DevLocations VALUES ('11 Hokotate-Cho', 'Kamitoba', 'Japan', '18035', 'Nintendo');
+INSERT INTO DevLocations VALUES ('3700 Ocean Park Blvd', 'Santa Monica', 'United States of America', '90405', 'Activision');
+INSERT INTO DevLocations VALUES ('16215 Alton Parkway', 'Irvine', 'United States of America', '92618', 'Blizzard');
+INSERT INTO DevLocations VALUES ('Södermalmsallén 36', 'Stockholm', 'Sweden', '11828', 'Dice');
